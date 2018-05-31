@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88194C9B20BC1D7A006A9E94 /* hello in Resources */ = {isa = PBXBuildFile; fileRef = 88194C9A20BC1D7A006A9E94 /* hello */; };
+		8851454020BFE12B001DE399 /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8851453D20BFE12B001DE399 /* UserManager.m */; };
 		88671E0E20BBD4520085B2C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88671E0D20BBD4520085B2C2 /* AppDelegate.m */; };
 		88671E1120BBD4520085B2C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88671E1020BBD4520085B2C2 /* ViewController.m */; };
 		88671E1320BBD4530085B2C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88671E1220BBD4530085B2C2 /* Assets.xcassets */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		88194C9A20BC1D7A006A9E94 /* hello */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = hello; sourceTree = "<group>"; };
+		8851453C20BFE12B001DE399 /* UserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserManager.h; sourceTree = "<group>"; };
+		8851453D20BFE12B001DE399 /* UserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
 		88671E0920BBD4520085B2C2 /* task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88671E0C20BBD4520085B2C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		88671E0D20BBD4520085B2C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,6 +105,9 @@
 		88671E0B20BBD4520085B2C2 /* task */ = {
 			isa = PBXGroup;
 			children = (
+				88194C9A20BC1D7A006A9E94 /* hello */,
+				8851453C20BFE12B001DE399 /* UserManager.h */,
+				8851453D20BFE12B001DE399 /* UserManager.m */,
 				88671E0C20BBD4520085B2C2 /* AppDelegate.h */,
 				88671E0D20BBD4520085B2C2 /* AppDelegate.m */,
 				88671E0F20BBD4520085B2C2 /* ViewController.h */,
@@ -198,6 +206,11 @@
 				TargetAttributes = {
 					88671E0820BBD4520085B2C2 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					88671E1E20BBD4530085B2C2 = {
 						CreatedOnToolsVersion = 9.3;
@@ -234,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88194C9B20BC1D7A006A9E94 /* hello in Resources */,
 				88671E1320BBD4530085B2C2 /* Assets.xcassets in Resources */,
 				88671E1620BBD4530085B2C2 /* Main.storyboard in Resources */,
 			);
@@ -262,6 +276,7 @@
 			files = (
 				88671E1120BBD4520085B2C2 /* ViewController.m in Sources */,
 				88671E1920BBD4530085B2C2 /* main.m in Sources */,
+				8851454020BFE12B001DE399 /* UserManager.m in Sources */,
 				88671E0E20BBD4520085B2C2 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,7 +437,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = task/task.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = task/Info.plist;
@@ -439,7 +453,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = task/task.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = task/Info.plist;

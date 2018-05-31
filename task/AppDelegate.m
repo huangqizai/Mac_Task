@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "UserManager.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +16,14 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+    
+
+    //开启task
+    [[UserManager sharedManager] startTask];
+    
 }
+
+
 
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
